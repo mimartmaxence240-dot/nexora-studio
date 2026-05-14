@@ -338,20 +338,12 @@ export default function Home() {
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
           {portfolio.map((project) => (
             <article className="portfolio-card" key={project.title}>
-              <div className={`portfolio-mockup bg-gradient-to-br ${project.gradient}`}>
-                <div className="mockup-window">
-                  <div className="mockup-bar">
-                    <span />
-                    <span />
-                    <span />
-                  </div>
-                  <div className="mockup-hero" />
-                  <div className="mockup-lines">
-                    <span />
-                    <span />
-                    <span />
-                  </div>
-                </div>
+              <div className="portfolio-mockup">
+                <img
+                  src="/immobilier.png"
+                  alt="Projet immobilier"
+                  className="h-full w-full rounded-3xl object-cover shadow-2xl"
+                />
               </div>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
